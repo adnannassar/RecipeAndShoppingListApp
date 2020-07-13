@@ -120,6 +120,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "RecipeAndShoppingListApp"
+    }
+  },
+  "defaultProject": "RecipeAndShoppingListApp",
+  "cli": {
+    "analytics": "eb078a05-948b-42a8-ad9f-8af189b92c1d"
+  }
 }
