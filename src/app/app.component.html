@@ -1,10 +1,11 @@
-<app-header></app-header>
+<app-header (pageSelected)="onPageSelected($event)"></app-header>
 <div class="container">
   <div class="row">
     <div class="col-md-12">
-     <app-recipes></app-recipes>
+      <h2 style="color: lightcoral" *ngIf="selectedPage===''">Welcome in Recipes Book App</h2>
+     <app-recipes *ngIf="selectedPage==='Recipes'"></app-recipes>
       <hr style="border: 3px solid lightslategrey; border-radius: 5px;">
-      <app-shopping-list></app-shopping-list>
+      <app-shopping-list *ngIf="selectedPage==='Shopping-List'"></app-shopping-list>
     </div>
   </div>
 </div>
